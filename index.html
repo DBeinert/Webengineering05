@@ -1,0 +1,47 @@
+<h1>Formulare zurücksetzen</h1>
+<main>
+	<form id="form1">
+		<h2>Formular 1 - ohne Vorbelegung</h2>
+		<label for="Vorname">Vorname:
+			<input type="text" name="Vorname" id="Vorname">
+		</label>
+		<label for="Zuname">Zuname:
+			<input type="text" name="Zuname" id="Zuname">
+		</label>
+		<div>Geschlecht:
+			<label for="männl">männlich:
+				<input type="radio" name="geschlecht" id="männl" value="männl">
+			</label>
+			<label for="weibl">weiblich:
+				<input type="radio" name="geschlecht" id="weibl" value="weibl">
+			</label>
+		</div>
+		<label for="alter">über 18:
+			<input type="checkbox" name="alter" id="alter">
+		</label>
+	</form>
+	<form id="form2">
+		<h2>Formular 2 - mit Vorbelegung</h2>
+		<label for="bname">Benutzer:
+			<input type="text" name="bname" id="bname" value="Peter und der Wolf">
+		</label>
+		<div>Alter:
+			<label for="ag1">unter 18:
+				<input type="radio" name="altersgruppe" id="ag1" value="ag1">
+			</label>
+			<label for="ag2">18 - 50:
+				<input type="radio" name="altersgruppe" id="ag2" value="ag2" checked>
+			</label>
+			<label for="ag3">über 50:
+				<input type="radio" name="altersgruppe" id="ag3" value="ag3">
+			</label>
+		</div>
+		<label for="agb">angemeldet:
+			<input type="checkbox" name="agb" id="agb" checked>
+		</label>
+	</form>
+	<p>
+		<button form="form1" type="reset">Formular 1 zurücksetzen</button>
+		<button form="form2" type="reset">Formular 2 zurücksetzen</button>
+	</p>
+</main>
